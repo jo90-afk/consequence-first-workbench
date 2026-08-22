@@ -1,0 +1,9 @@
+interface:
+  display_name: Model-to-Interface Translator
+  short_description: Turn conceptual models into coherent interfaces
+  default_prompt: Use $model-to-interface-translator to turn this model into a coherent
+    interface.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
