@@ -1,0 +1,18 @@
+{
+  "name": "consequence-first-workbench",
+  "version": "1.0.0",
+  "description": "A coordinated suite for consequence-aware writing, research, product design, software delivery, manuscript governance, and bounded project execution.",
+  "author": {
+    "name": "Jude O’Neill"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Consequence-First Workbench",
+    "shortDescription": "Trace consequences, preserve truth, ship coherent work.",
+    "longDescription": "Eleven coordinated, author-neutral skills for editorial voice, argument structure, consequence propagation, iterative software delivery, canonical state, corrections, project intake, evidence, interface translation, manuscript stewardship, and bounded orchestration.",
+    "developerName": "Jude O’Neill",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Trace this decision through every material consequence, preserve canonical state, and turn the result into bounded executable work."
+  }
+}
