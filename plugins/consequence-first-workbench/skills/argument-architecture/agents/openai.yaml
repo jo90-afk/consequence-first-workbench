@@ -1,0 +1,8 @@
+interface:
+  display_name: Argument Architecture
+  short_description: Structure arguments around real claim movement
+  default_prompt: Use $argument-architecture to map and strengthen this argument.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
