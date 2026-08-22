@@ -1,0 +1,9 @@
+interface:
+  display_name: Correction Propagator
+  short_description: Propagate accepted corrections across a project
+  default_prompt: Use $correction-propagator to apply this correction everywhere it
+    belongs.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
