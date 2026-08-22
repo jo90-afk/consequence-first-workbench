@@ -1,0 +1,9 @@
+interface:
+  display_name: Evidence & Lineage Researcher
+  short_description: Verify sources, quotations, and intellectual lineage
+  default_prompt: Use $evidence-lineage-researcher to verify the evidence and lineage
+    for these claims.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
