@@ -1,0 +1,20 @@
+{
+  "name": "consequence-first-workbench",
+  "interface": {
+    "displayName": "Consequence-First Workbench"
+  },
+  "plugins": [
+    {
+      "name": "consequence-first-workbench",
+      "source": {
+        "source": "local",
+        "path": "./plugins/consequence-first-workbench"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
