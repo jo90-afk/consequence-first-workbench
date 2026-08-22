@@ -1,0 +1,8 @@
+interface:
+  display_name: "Editorial Voice Architecture"
+  short_description: "Preserve a distinct voice while strengthening prose"
+  default_prompt: "Use $editorial-voice-architecture to revise this draft without flattening the author’s voice."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+policy:
+  allow_implicit_invocation: true
