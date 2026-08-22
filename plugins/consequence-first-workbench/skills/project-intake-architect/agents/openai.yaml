@@ -1,0 +1,9 @@
+interface:
+  display_name: Project Intake Architect
+  short_description: Turn rough ideas into build-ready project state
+  default_prompt: Use $project-intake-architect to turn this idea into a build-ready
+    project.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
