@@ -1,0 +1,9 @@
+interface:
+  display_name: Iterative Software Builder
+  short_description: Build software in fast, validated increments
+  default_prompt: Use $iterative-software-builder to implement this change with a
+    fast validation loop.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
