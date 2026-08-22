@@ -1,0 +1,9 @@
+interface:
+  display_name: Manuscript Steward
+  short_description: Protect approval-gated manuscript continuity
+  default_prompt: Use $manuscript-steward to revise this chapter and preserve the
+    canonical manuscript.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
