@@ -1,0 +1,9 @@
+interface:
+  display_name: Canonical State Manager
+  short_description: Protect authoritative state across versions
+  default_prompt: Use $canonical-state-manager to establish the baseline and reconcile
+    these versions.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
