@@ -35,6 +35,11 @@ Start a new Codex or Work conversation after installation so the skills load.
 
 More detailed positive and negative activation cases are included in [`plugins/consequence-first-workbench/submission/test-cases.md`](plugins/consequence-first-workbench/submission/test-cases.md).
 
+Automated distribution checks and the host-observation evaluation procedure are
+documented in [Distribution assurance](assurance/README.md). GitHub Actions checks
+the manifests, versions, resources, and evaluation harness. Actual skill activation
+and reasoning require recorded host evidence; a passing build does not establish them.
+
 ## Public scope
 
 This distribution is author-neutral and domain-neutral. It contains generalized methods and public-safe examples only. Private source material is not part of the repository.

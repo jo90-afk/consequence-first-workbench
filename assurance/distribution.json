@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "visibility": "public",
+  "plugin_name": "consequence-first-workbench",
+  "marketplace_name": "consequence-first-workbench",
+  "skills": [
+    "argument-architecture",
+    "bounded-work-orchestrator",
+    "canonical-state-manager",
+    "consequence-first-design",
+    "correction-propagator",
+    "editorial-voice-architecture",
+    "evidence-lineage-researcher",
+    "iterative-software-builder",
+    "manuscript-steward",
+    "model-to-interface-translator",
+    "project-intake-architect"
+  ],
+  "forbidden_identifiers": [
+    "jude-editorial-voice",
+    "jude-workbench-marketplace",
+    "plugins/jude-workbench/"
+  ]
+}

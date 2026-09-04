@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "source": "plugins/consequence-first-workbench/submission/test-cases.md",
+  "cases": [
+    {
+      "id": "consequence-propagation",
+      "kind": "positive",
+      "prompt": "A customer can now pause a subscription instead of cancelling it. Trace every state, task, message, metric, and interface that should change.",
+      "required_skills": [
+        "consequence-first-design"
+      ],
+      "forbidden_skills": [],
+      "forbid_all": false,
+      "review_criteria": {
+        "derived_state": "Identify derived state and the material dependencies of the proposed pause state.",
+        "replacement": "Identify invalidations, replacement actions and operational consequences."
+      },
+      "setup": "Run in a fresh host conversation with only the intended workbench distribution installed."
+    },
+    {
+      "id": "canonical-reconciliation",
+      "kind": "positive",
+      "prompt": "The deployed application is canonical, but this older repository contains one missing report. Recover only that report without regressing later behavior.",
+      "required_skills": [
+        "canonical-state-manager"
+      ],
+      "forbidden_skills": [],
+      "forbid_all": false,
+      "review_criteria": {
+        "directional_lineage": "Preserve the deployed canonical baseline and recover the selected report as a forward change."
+      },
+      "setup": "Provide two neutral fixture trees: a declared current deployment and an older tree containing a missing report; record their identities in the trace."
+    },
+    {
+      "id": "project-intake",
+      "kind": "positive",
+      "prompt": "I want an internal tool for reviewing supplier risk. Ask only what you need to make it build-ready.",
+      "required_skills": [
+        "project-intake-architect"
+      ],
+      "forbidden_skills": [],
+      "forbid_all": false,
+      "review_criteria": {
+        "adaptive_intake": "Ask about material unknowns adaptively; distinguish settled facts, assumptions and unknowns."
+      },
+      "setup": "Run in a fresh host conversation with only the intended workbench distribution installed."
+    },
+    {
+      "id": "argument-evidence",
+      "kind": "positive",
+      "prompt": "Map this strategy paper’s claims, show which ones repeat, and identify the exact evidence each contestable claim needs.",
+      "required_skills": [
+        "argument-architecture",
+        "evidence-lineage-researcher"
+      ],
+      "forbidden_skills": [],
+      "forbid_all": false,
+      "review_criteria": {
+        "claim_functions": "Separate claim functions and repetition in the supplied strategy paper.",
+        "evidence_scope": "Map evidence needs to the exact scope of contestable claims."
+      },
+      "setup": "Provide a neutral strategy paragraph with two distinct claims and a repeated assertion; retain the fixture in the host trace."
+    },
+    {
+      "id": "bounded-implementation",
+      "kind": "positive",
+      "prompt": "Implement the approved workflow change in this dirty worktree, validate the affected behavior, and leave release packaging for the checkpoint.",
+      "required_skills": [
+        "iterative-software-builder"
+      ],
+      "forbidden_skills": [],
+      "forbid_all": false,
+      "review_criteria": {
+        "preserve_work": "Inspect and preserve unrelated worktree changes.",
+        "targeted_validation": "Validate the authorized affected behavior; leave release packaging for the checkpoint."
+      },
+      "setup": "Use an isolated neutral repository with an explicitly approved small workflow edit and a separate unrelated dirty file. Record before/after and the focused check in the trace. Never point this case at a production repository."
+    },
+    {
+      "id": "stable-fact",
+      "kind": "negative",
+      "prompt": "What is the capital of France?",
+      "required_skills": [],
+      "forbidden_skills": [],
+      "forbid_all": true,
+      "review_criteria": {
+        "direct_answer": "Answer the stable fact directly without activating this plugin."
+      },
+      "setup": "Run in a fresh host conversation with only the intended workbench distribution installed."
+    },
+    {
+      "id": "cosmetic-edit",
+      "kind": "negative",
+      "prompt": "Make this button blue. Its behavior and state model are already settled.",
+      "required_skills": [],
+      "forbidden_skills": [
+        "consequence-first-design",
+        "model-to-interface-translator"
+      ],
+      "forbid_all": false,
+      "review_criteria": {
+        "proportionate_response": "Complete or describe the settled cosmetic edit without inventing model or consequence work."
+      },
+      "setup": "Supply an isolated HTML button fixture with behavior and state already settled."
+    },
+    {
+      "id": "conceptual-software",
+      "kind": "negative",
+      "prompt": "Explain recursion with a short example, but do not change any files.",
+      "required_skills": [],
+      "forbidden_skills": [
+        "iterative-software-builder"
+      ],
+      "forbid_all": false,
+      "review_criteria": {
+        "explanation_only": "Explain recursion briefly without editing files or invoking the implementation skill."
+      },
+      "setup": "Run in a fresh host conversation with only the intended workbench distribution installed."
+    }
+  ]
+}
